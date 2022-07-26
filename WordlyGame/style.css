@@ -2,13 +2,13 @@ h1 {
     text-align: center;
    }
 
-   #game-board {
+   #gameboard {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   
-  .letter-box {
+  .boardBox {
     border: 2px solid grey;
     border-radius: 3px;
     margin: 2px;
@@ -26,7 +26,7 @@ h1 {
     border: 2px solid black;
   }
   
-  .letter-row {
+  .boardRow {
     display: flex;
   }
 
