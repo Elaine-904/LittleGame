@@ -16,7 +16,7 @@ export default function Home() {
     const mouse = new THREE.Vector2();
     const raycaster = new THREE.Raycaster();
   
-
+    const splitScreen = document.getElementById("splitScreen");
     function onMouseDown(event: { clientX: number; clientY: number; }) {
       // Half-screen
       // const splitScreen = document.getElementById("splitScreen");
