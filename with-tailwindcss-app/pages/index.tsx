@@ -16,7 +16,7 @@ export default function Home() {
     const mouse = new THREE.Vector2();
     const raycaster = new THREE.Raycaster();
 
-    function onMouseDown(event) {
+    function onMouseDown(event: { clientX: number; clientY: number; }) {
       // Half-screen
       // const splitScreen = document.getElementById("splitScreen");
       // mouse.x = (event.clientX / splitScreen.clientWidth) * 2 - 3;
@@ -48,7 +48,7 @@ export default function Home() {
 
     window.addEventListener("mousedown", onMouseDown, false);
 
-    const scaleUp = (obj) => {
+    const scaleUp = (obj: { scale: { x: number; y: number; z: number; }; }) => {
       if (obj.scale.x < 1) {
         obj.scale.x += 0.04;
       }
