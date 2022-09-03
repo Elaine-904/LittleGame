@@ -1,9 +1,8 @@
-import * as THREE from "three";
-
+// import * as THREE from "three";
 import { useEffect } from "react";
 import SceneInit from "./lib/SceneInit";
 import TicTacToe from "./lib/TicTacToe";
-
+const THREE = require('three');
 
 export default function Home() {
   useEffect(() => {
