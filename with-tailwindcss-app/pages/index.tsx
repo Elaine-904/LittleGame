@@ -15,14 +15,14 @@ export default function Home() {
 
     const mouse = new THREE.Vector2();
     const raycaster = new THREE.Raycaster();
-  
-    const splitScreen = document.getElementById("splitScreen");
+ 
     function onMouseDown(event: { clientX: number; clientY: number; }) {
       // Half-screen
       // const splitScreen = document.getElementById("splitScreen");
       // mouse.x = (event.clientX / splitScreen.clientWidth) * 2 - 3;
       // mouse.y = -(event.clientY / splitScreen.clientHeight) * 2 + 1;
       // Full-screen
+      const splitScreen = document.getElementById("splitScreen");
       mouse.x = (event.clientX / splitScreen.clientWidth) * 2 - 1;
       mouse.y = -(event.clientY / splitScreen.clientHeight) * 2 + 1;
       raycaster.setFromCamera(mouse, test.camera);
