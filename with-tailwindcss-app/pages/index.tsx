@@ -23,8 +23,8 @@ export default function Home() {
       // mouse.y = -(event.clientY / splitScreen.clientHeight) * 2 + 1;
       // Full-screen
       const splitScreen = document.getElementById("splitScreen");
-      mouse.x = (event.clientX / splitScreen.clientWidth) * 2 - 1;
-      mouse.y = -(event.clientY / splitScreen.clientHeight) * 2 + 1;
+      mouse.x = (event.clientX / splitScreen!.clientWidth) * 2 - 1;
+      mouse.y = -(event.clientY / splitScreen!.clientHeight) * 2 + 1;
       raycaster.setFromCamera(mouse, test.camera);
       const intersects = raycaster.intersectObjects(
         ticTacToe.hiddenTiles.children
