@@ -15,6 +15,7 @@ export default function Home() {
 
     const mouse = new THREE.Vector2();
     const raycaster = new THREE.Raycaster();
+  
 
     function onMouseDown(event: { clientX: number; clientY: number; }) {
       // Half-screen
